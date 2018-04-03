@@ -112,3 +112,145 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+
+
+/* Below are my changes for CHALLENGE 2 for 4/3/18 (flexbox) */
+
+
+.container {
+  display: flex;
+  flex-direction:row;
+  width: 880px;
+  margin: 0 auto;
+}
+
+/* header */
+
+header nav {
+  display: inline-flex;
+  width: 650px;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+header nav a {
+  display: inline-flex;
+  flex-direction:row;
+  margin-right: 60px;
+  font-size: 10px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+ display: flex;
+ flex-direction: row;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  display: inline-flex;
+  flex-direction:row;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* cta */
+
+.cta .cta-text {
+  display: inline-flex;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 90px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display: inline-block;
+  margin-top: 69px;
+}
+
+.main-content {
+  display:flex;
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  display: inline-block;
+  align-content: space-around;
+  margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+  align-content: space-around;
+}
+
+.main-content .middle-img {
+  
+  margin-top: 45px;
+  align-items: center;
+}
+
+.main-content .bottom-content {
+  margin-top: 30px;
+  align-items: center;
+}
+
+.main-content .bottom-content .text-content {
+
+  display: inline-block;
+  align-items: center;
+
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  flex-direction: column;
+  align-self:flex-end;
+  border-top: 1px solid black;
+
+}
+
+.contact p {
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+footer {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 10px;
+}
